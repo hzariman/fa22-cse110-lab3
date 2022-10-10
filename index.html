@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hariz's Meeting Minutes</title>
     <link rel="icon" type="image/png" href="static/favicon_io/favicon.ico">
   </head>
   <body>
     <main>
-        <meta name="description" content="">
         <h1>Hariz's Meeting Minutes</h1>
         <header>
             <p>Welcome to my <b>Meeting Minutes</b> page! <br> My name is Hariz and this
@@ -20,7 +19,9 @@
                 You can quickly access details about past meetings
                 using the navigation <strong>below:</strong>
                 </p>
-                <a href="#meeting1"><li>CSE 110 First Brainstorm</li></a>
+                <ul>
+                    <a href="#meeting1"><li>CSE 110 First Brainstorm</li></a>
+                </ul>
             </nav>
         </header>
 
@@ -30,23 +31,18 @@
             <ul>
                 <div class = "meeting-style">
                     <details>
-                        <summary> Meeting Details (Video/Audio)</summary>
-                        <ul>
+                        <summary> Meeting Details (Video/Audio)</summary
                             <p>Date: October 9 2022</p>
                             <video>
                                 <source src = "./static/Informational_video.mp4" type="video/mp4">
                             </video>
                             <audio controls>
                                 <audio src="./static/Info_Audio.mp3" type="audio/mpeg"></audio>
-                            </audio>
-                            
-
-                        </ul>
-                        
+                            </audio>                 
                     </details>
                 <h3><u>Attendance</u></h3>
                 <p>The below members have <span style="color:red"> attended </span>this meeting:</p>
-                <ul><a href="github.com/hzariman"><li>Hariz Megat Zariman</li></a></ul>
+                <ul><a href="https://www.github.com/hzariman"><li>Hariz Megat Zariman</li></a></ul>
 
                 <h3><u>Meeting Notes</u></h3>
                 <ol>
@@ -69,6 +65,7 @@
                     <details>
                         <summary>Meme to brighten your day :)</summary>
                         <img src="./static/meme1.png" alt="meme">
+                        <meta name="description" content="Funny meme">
                     </details>
                 </ul>
 
@@ -84,8 +81,6 @@
                         <input type="text" id="pid" name="pid"><br><br>
                         <label for="birthdate">Birthdate:</label>
                         <input type="date" id="birthdate" name="birthdate"><br><br>
-                        <label for="UpToDate">Up to Date with lectures?</label>
-                        <input type="checkbox" id="UpToDate" name="UpToDate"><br><br>
                         <label for="UpToDate">Up to Date with lectures?</label>
                         <input type="checkbox" id="UpToDate" name="UpToDate"><br><br>
                         <label for="role">Select Role:</label><br>
@@ -124,9 +119,8 @@
         </section>
 
     </main>
+    <footer>
+        <p>Feel free to reach out to me at <em>mqmegatz@ucsd.edu</em> (or <i>hzariman@gmail.com</i> for personal inquiries)</p>
+    </footer>
 </body>
-  
-<footer>
-  <p>Feel free to reach out to me at <em>mqmegatz@ucsd.edu</em> (or <i>hzariman@gmail.com</i> for personal inquiries)</p>
-</footer>
 </html>
