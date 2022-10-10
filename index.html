@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Hariz's Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="static/favicon_io/favicon.ico">
+  </head>
+  <body>
+    <main>
+        <meta name="description" content="">
+        <h1>Hariz's Meeting Minutes</h1>
+        <header>
+            <p>Welcome to my <b>Meeting Minutes</b> page! <br> My name is Hariz and this
+                is my basic page for writing notes about meetings that occur throughout <br>
+                this quarter!
+            </p>
+
+            <nav>
+                <p>
+                You can quickly access details about past meetings
+                using the navigation <strong>below:</strong>
+                </p>
+                <a href="#meeting1"><li>CSE 110 First Brainstorm</li></a>
+            </nav>
+        </header>
+
+        <section id = "meeting1">
+            <hr>
+            <h2>CSE 110 First Brainstorm</h2>
+            <ul>
+                <div class = "meeting-style">
+                    <details>
+                        <summary> Meeting Details (Video/Audio)</summary>
+                        <ul>
+                            <p>Date: October 9 2022</p>
+                            <video>
+                                <source src = "./static/Informational_video.mp4" type="video/mp4">
+                            </video>
+                            <audio controls>
+                                <audio src="./static/Info_Audio.mp3" type="audio/mpeg"></audio>
+                            </audio>
+                            
+
+                        </ul>
+                        
+                    </details>
+                <h3><u>Attendance</u></h3>
+                <p>The below members have <span style="color:red"> attended </span>this meeting:</p>
+                <ul><a href="github.com/hzariman"><li>Hariz Megat Zariman</li></a></ul>
+
+                <h3><u>Meeting Notes</u></h3>
+                <ol>
+                    <li>Did introductions/icebreakers - essentially getting to know everyone</li>
+                    <li>Talked about past experiences in SE</li>
+                    <li>Discussed scheduling and when is convenient for standups</li>
+                    <li>Specified future team structure and plan</li>
+                </ol>
+                </div>
+            </ul>
+            <hr>
+        </section>
+
+        <section id = "misc">
+                <div class = "misc-style">
+                    <h2>Miscellaneous (Images/Forms)</h2>
+                
+
+                <ul>
+                    <details>
+                        <summary>Meme to brighten your day :)</summary>
+                        <img src="./static/meme1.png" alt="meme">
+                    </details>
+                </ul>
+
+                <h2>Form</h2>
+                <form>
+                    <fieldset>
+        
+                        <label for="first">First name:</label>
+                        <input type="text" id="first" name="first"><br><br>
+                        <label for="last">Last name:</label>
+                        <input type="text" id="last" name="last"><br><br>
+                        <label for="pid">UCSD PID:</label>
+                        <input type="text" id="pid" name="pid"><br><br>
+                        <label for="birthdate">Birthdate:</label>
+                        <input type="date" id="birthdate" name="birthdate"><br><br>
+                        <label for="UpToDate">Up to Date with lectures?</label>
+                        <input type="checkbox" id="UpToDate" name="UpToDate"><br><br>
+                        <label for="UpToDate">Up to Date with lectures?</label>
+                        <input type="checkbox" id="UpToDate" name="UpToDate"><br><br>
+                        <label for="role">Select Role:</label><br>
+                        <input type="radio" id="UpToDate" name="role" value="1">Team Leader<br>
+                        <input type="radio" id="UpToDate" name="role" value="2">Front-end<br>
+                        <input type="radio" id="UpToDate" name="role" value="3">Back-end<br>
+                        <label for="thoughts">How are you feeling about the course so far?</label><br>
+                        <textarea id="thoughts" name="thoughts" rows="1" cols="33">
+                            Meh...
+                        </textarea><br><br>
+                        <label for="favlang">Choose your favorite language:</label>
+                        <input list="languages" name="favlang" id="favlang">
+                        <datalist id="languages">
+                            <option value="Python"></option>
+                            <option value="Java"></option>
+                            <option value="C/C++"></option>
+                            <option value="Other"></option>
+                        </datalist> <br>
+                        <label for="FavAnimal">Select your favorite animal:</label>
+                        <select name="FavAnimal" id="FavAnimal">
+                            <option value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                            <option value="other">Other</option>
+                        </select><br>
+                        <label for="college">Which college option are you from?</label>
+                        <select id="college">
+                            <option value="sixth">Sixth</option>
+                            <option value="other">Literally anything else</option>
+                        </select><br><br>
+                        <button type="submit" value="Submit">Submit</button>
+
+                    </fieldset>
+                </form>
+                <hr>
+            </div>
+        </section>
+
+    </main>
+</body>
+  
+<footer>
+  <p>Feel free to reach out to me at <em>mqmegatz@ucsd.edu</em> (or <i>hzariman@gmail.com</i> for personal inquiries)</p>
+</footer>
+</html>
