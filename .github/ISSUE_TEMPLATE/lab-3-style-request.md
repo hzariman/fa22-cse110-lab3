@@ -1,7 +1,7 @@
 ---
 name: Lab 3 Style request
 about: Task breakdown template for Lab 3
-title: "[FEATURE]"
+title: 'BD-<NUMBER>/<LOCATION>: <FEATURE>'
 labels: front-end
 assignees: hzariman
 
