@@ -1,9 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/* Set all text in file to this font*/
 * {
     font-family: 'Poppins', sans-serif;
 }
 
+/*Header layout and color style*/
 header {
     background-color: #3AAFA9;
     margin-top: 0cm;
@@ -14,16 +17,19 @@ header {
     height : 25em;
   }
 
+  /*Responsive query*/
   @media (max-width: 600px) {
    header {
     background-color: #4aebe3;
    } 
   }
 
+  /*Pseudo-class and shared class styling*/
   .header-title, .misc-style, p.header-text:hover {
     color: #FEFFFF;
   }
 
+  /*Title position alignment and decoration*/
   h1.header-title {
     text-align: center;
     font-size: 250%;
@@ -31,18 +37,21 @@ header {
     position: static;
   }
 
+  /*Paragraph in header section style*/
   p.header-text {
     color: black;
     font-size: large;
     font-weight: bolder;
   }
 
+  /*Navigation list display*/
   ul#main-nav {
     list-style-type: square;
     display: inline-block;
     margin: auto;
   }
 
+/*Meeting layout and color style*/
 section#meeting1 {
     background-color: rgb(white, white, white);
     border: 10px solid #3AAFA9;
@@ -59,15 +68,13 @@ section#meeting1 {
         "attendance notes"
 
 }
-
+/*Meeting Grid children layout*/
 section#meeting1 > h2 {
     grid-area: header;
 }
-
 details#meeting-details {
     grid-area: details;
 }
-
 section#meeting1 > div.meeting-style {
     grid-area: attendance;
 }
@@ -76,10 +83,12 @@ section#meeting1 > div.meeting-notes {
     grid-area: notes;
 }
 
+/*Children selector and pseudo-class style for span*/
 .meeting-style > p > span, a:active {
     color: red;
 }
 
+/*Meeting details layout and color style when opened*/
 details[open]#meeting-details{
     background-color: #3AAFA9;
     color: hsl(0, 100, 100);
@@ -96,10 +105,12 @@ details[open]#meeting-details{
     display: block;
 }
 
+/*Style for when li object is related to a ordered list*/
 ol ~ li {
     font-weight: bold;
 }
 
+/*Misc layout and color style*/
 section#misc {
     background-color: #3AAFA9; 
     border: 5px solid black;
@@ -114,20 +125,24 @@ section#misc {
 
 }
 
+/*Form fieldset layout and color style in Misc section*/
 section#misc form fieldset {
     border: 5px solid black; 
     background-color: white;
     width: 30em;
 }
 
+/*Checkbox bolor style DEFAULT*/
 input[type=checkbox] + label {
     color: black;
 }
 
+/*Checkbox bolor style WHEN CHECKED*/
 input[type=checkbox]:checked + label {
     color: rgb(7, 155, 7);
 }
 
+/*Style for all em after first paragraph*/
 p ~ em {
     color: #3AAFA9;
 }
