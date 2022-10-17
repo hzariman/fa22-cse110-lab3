@@ -2,7 +2,7 @@
 
 
 header {
-    background-color: #3AAFA9;;
+    background-color: #3AAFA9;
     font-family: 'Poppins', sans-serif;
     
   }
@@ -19,5 +19,23 @@ header {
     list-style-type: square;
   }
 
+section#meeting1 {
+    background-color: rgb(white, white, white);
+    border: 10px solid #3AAFA9;
+    padding: 2.5%;
+    font-family: 'Poppins', sans-serif;
+}
 
+details[open]{
+    background-color: #3AAFA9;
+    color: hsl(0, 100, 100);
+    border-width: 2mm;
+    border-color:black;
+    border-style: dashed solid;
+    border-radius: 25px;
+    padding-left: 2em;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    width: 35%;
+}
   
