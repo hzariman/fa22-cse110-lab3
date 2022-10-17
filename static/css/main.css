@@ -6,18 +6,35 @@
 
 header {
     background-color: #3AAFA9;
+    margin-top: 0;
+    margin-bottom: 2.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding: 2% 2% 2% 2%;
+    height : 20em;
+    display: block;
   }
 
   .header-title, .misc-style {
     color: #FEFFFF;
   }
 
+  h1.header-title {
+    text-align: center;
+    font-size: 250%;
+    text-decoration: underline;
+  }
+
   p.header-text {
-    color: black
+    color: black;
+    font-size: large;
+    font-weight: bolder;
   }
 
   ul#main-nav {
     list-style-type: square;
+    display: inline-block;
+    margin: auto;
   }
 
 section#meeting1 {
@@ -59,6 +76,7 @@ section#misc {
 section#misc form {
     border: 5px solid black; 
     background-color: white;
+    width: 30em;
 }
 
 input[type=checkbox] + label {
