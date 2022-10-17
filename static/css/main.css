@@ -6,12 +6,18 @@
 
 header {
     background-color: #3AAFA9;
-    margin-top: 0;
+    margin-top: 0cm;
     margin-bottom: 2.5%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     padding: 2% 2% 2% 2%;
     height : 25em;
+  }
+
+  @media (max-width: 600px) {
+   header {
+    background-color: #4aebe3;
+   } 
   }
 
   .header-title, .misc-style, p.header-text:hover {
@@ -22,6 +28,7 @@ header {
     text-align: center;
     font-size: 250%;
     text-decoration: underline;
+    position: static;
   }
 
   p.header-text {
@@ -49,7 +56,7 @@ section#meeting1 {
     grid-template-areas:
         "header header"
         "details details"
-        "sidebar-2 sidebar-3"
+        "attendance notes"
 
 }
 
@@ -61,20 +68,17 @@ details#meeting-details {
     grid-area: details;
 }
 
-section#meeting1.meeting-style {
-    grid-area: header;
+section#meeting1 > div.meeting-style {
+    grid-area: attendance;
 }
 
-section#meeting1.meeting-notes {
-    grid-area: header;
+section#meeting1 > div.meeting-notes {
+    grid-area: notes;
 }
 
 .meeting-style > p > span, a:active {
     color: red;
 }
-
-
-
 
 details[open]#meeting-details{
     background-color: #3AAFA9;
@@ -86,6 +90,7 @@ details[open]#meeting-details{
     padding-left: 2em;
     padding-top:1rem;
     padding-bottom: 1rem;
+    padding-right: 0;
     width: 35%;
     position: relative;
     display: block;
@@ -98,13 +103,18 @@ ol ~ li {
 section#misc {
     background-color: #3AAFA9; 
     border: 5px solid black;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0cm;
+    padding-bottom: 0cm;
     padding-left: 2.5%;
-    padding-right: 0;
+    padding-right: 0cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+
 }
 
-section#misc form {
+section#misc form fieldset {
     border: 5px solid black; 
     background-color: white;
     width: 30em;
