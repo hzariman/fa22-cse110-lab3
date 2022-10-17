@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+header {
+    background-color: #3AAFA9;;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  .header-title {
+    color: #FEFFFF;
+  }
+
+  .header-text {
+    color: black
+  }
+
+  ul#main-nav {
+    list-style-type: square;
+  }
+
+
+  
