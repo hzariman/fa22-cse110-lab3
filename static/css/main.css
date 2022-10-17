@@ -11,11 +11,10 @@ header {
     margin-left: 0.5%;
     margin-right: 0.5%;
     padding: 2% 2% 2% 2%;
-    height : 20em;
-    display: block;
+    height : 25em;
   }
 
-  .header-title, .misc-style {
+  .header-title, .misc-style, p.header-text:hover {
     color: #FEFFFF;
   }
 
@@ -40,12 +39,42 @@ header {
 section#meeting1 {
     background-color: rgb(white, white, white);
     border: 10px solid #3AAFA9;
-    padding: 2.5%;
+    padding: 2.5% ;
+    margin: 0 0.5% 2.5% 0.5%;
+    max-width: 100%;
+    min-width: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    grid-template-areas:
+        "header header"
+        "details details"
+        "sidebar-2 sidebar-3"
+
 }
 
-.meeting-style > p > span {
+section#meeting1 > h2 {
+    grid-area: header;
+}
+
+details#meeting-details {
+    grid-area: details;
+}
+
+section#meeting1.meeting-style {
+    grid-area: header;
+}
+
+section#meeting1.meeting-notes {
+    grid-area: header;
+}
+
+.meeting-style > p > span, a:active {
     color: red;
 }
+
+
+
 
 details[open]#meeting-details{
     background-color: #3AAFA9;
@@ -58,6 +87,8 @@ details[open]#meeting-details{
     padding-top:1rem;
     padding-bottom: 1rem;
     width: 35%;
+    position: relative;
+    display: block;
 }
 
 ol ~ li {
