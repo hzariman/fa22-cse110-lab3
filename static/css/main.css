@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 header {
     background-color: #3AAFA9;
-    font-family: 'Poppins', sans-serif;
-    
   }
 
-  .header-title {
+  .header-title, .misc-style {
     color: #FEFFFF;
   }
 
-  .header-text {
+  p.header-text {
     color: black
   }
 
@@ -23,10 +24,13 @@ section#meeting1 {
     background-color: rgb(white, white, white);
     border: 10px solid #3AAFA9;
     padding: 2.5%;
-    font-family: 'Poppins', sans-serif;
 }
 
-details[open]{
+.meeting-style > p > span {
+    color: red;
+}
+
+details[open]#meeting-details{
     background-color: #3AAFA9;
     color: hsl(0, 100, 100);
     border-width: 2mm;
@@ -38,4 +42,33 @@ details[open]{
     padding-bottom: 1rem;
     width: 35%;
 }
-  
+
+ol ~ li {
+    font-weight: bold;
+}
+
+section#misc {
+    background-color: #3AAFA9; 
+    border: 5px solid black;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2.5%;
+    padding-right: 0;
+}
+
+section#misc form {
+    border: 5px solid black; 
+    background-color: white;
+}
+
+input[type=checkbox] + label {
+    color: black;
+}
+
+input[type=checkbox]:checked + label {
+    color: rgb(7, 155, 7);
+}
+
+p ~ em {
+    color: #3AAFA9;
+}

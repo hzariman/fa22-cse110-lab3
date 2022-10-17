@@ -10,8 +10,8 @@
     <main>
         <header>
             <h1 class="header-title">Hariz's Meeting Minutes</h1>
-            <p class="header-text">Welcome to my <b>Meeting Minutes</b> page! <br> My name is Hariz and this
-                is my basic page for writing notes about meetings that occur throughout <br>
+            <p class="header-text">Welcome to my <b>Meeting Minutes</b> page!</p>
+            <p><br> My name is Hariz and thisis my basic page for writing notes about meetings that occur throughout <br>
                 this quarter!
             </p>
 
@@ -29,7 +29,7 @@
         <section id = "meeting1">
             <hr>
             <h2>CSE 110 First Brainstorm</h2>
-                <details>
+                <details id="meeting-details">
                     <summary> Meeting Details (Video/Audio)</summary>
                         <p>Date: October 9 2022</p>
                         <video width="320" height="240" controls>
@@ -58,6 +58,7 @@
         <section id = "misc">
                 <div class = "misc-style">
                     <h2>Miscellaneous (Images/Forms)</h2>
+                </div>
 
                 <details>
                     <summary>Hello</summary>
@@ -75,8 +76,8 @@
                         <input type="text" id="pid" name="pid"><br><br>
                         <label for="birthdate">Birthdate:</label>
                         <input type="date" id="birthdate" name="birthdate"><br><br>
+                        <input type="checkbox" id="UpToDate" name="UpToDate">
                         <label for="UpToDate">Up to Date with lectures?</label>
-                        <input type="checkbox" id="UpToDate" name="UpToDate"><br><br>
                         <p>Select Role:</p>
                         <input type="radio" id = "tl" name="role" value="1">Team Leader<br>
                         <input type="radio" id="fe" name="role" value="2">Front-end<br>
@@ -109,12 +110,12 @@
                     </fieldset>
                 </form>
                 <hr>
-            </div>
         </section>
 
     </main>
     <footer>
         <p>Feel free to reach out to me at <em>mqmegatz@ucsd.edu</em> (or <i>hzariman@gmail.com</i> for personal inquiries)</p>
+        <em>Thanks for reading!</em>
     </footer>
 </body>
 </html>
